@@ -7,18 +7,13 @@ import loadContract from "./utils/loadContract";
 import {
   HomeScreen,
   TokenScreen,
-  FaqScreen,
-  ContactScreen,
   LoadingScreen,
   ErrorScreen,
-  TokenDistScreen,
-  FaucetScreen,
   TransactionScreen,
 } from "./screens";
 import Header from "./components/Header";
 import GlobalContext from "./context/GlobalContext";
 import connectWallet from "./utils/connectWallet";
-import Footer from "./components/Footer";
 
 function App() {
   const [provider, setProvider] = useState(null);
@@ -109,20 +104,9 @@ function App() {
                   <Route path="/home" element={<HomeScreen />} />
                   <Route path="/token" element={<TokenScreen />} />
                   <Route path="/transaction" element={<TransactionScreen />} />
-                  <Route
-                    path="/tokenDistribution"
-                    element={<TokenDistScreen />}
-                  />
-                  <Route path="/faucet" element={<FaucetScreen />} />
-                  <Route path="/faq" element={<FaqScreen />} />
-                  <Route path="/contact" element={<ContactScreen />} />
-
                   <Route path="*" element={<ErrorScreen />} />
                 </>
               </Routes>
-            </div>
-            <div className="flex justify-center items-end">
-              <Footer />
             </div>
           </div>
         ) : (

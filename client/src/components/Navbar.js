@@ -12,19 +12,7 @@ const Navbar = () => {
       </Link>
       <Link to="/transaction" className="navbar-title">
         Transaction
-      </Link>
-      <Link to="/tokenDistribution" className="navbar-title">
-        Token Distribution
-      </Link>
-      <Link to="/faucet" className="navbar-title">
-        Faucet
-      </Link>
-      <Link to="/faq" className="navbar-title">
-        Faq
-      </Link>
-      <Link to="/contact" className="navbar-title">
-        Contact
-      </Link>
+      </Link>     
     </div>
   );
 };

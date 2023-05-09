@@ -11,7 +11,7 @@ const TokenDetails = ({ title, value }) => {
           <div className="m-2">
             <a
               className="btn text-sm mt-2 "
-              href="https://goerli.etherscan.io/token/0x569eb2a0f04a7134788d7c02b6b804d9b1d82d09"
+              href="https://goerli.etherscan.io/token/0x9a2ef39C34cFf2833b7Ca13330A8703362918ec6"
               target="_blank"
               rel="noreferrer noopener"
             >
